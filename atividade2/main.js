@@ -11,6 +11,8 @@ frm.addEventListener("submit", (e) => {
     const horas = Math.floor(duracao/60)    //arrendonda para baixo resultado
     const minutos = duracao % 60            // obtém o resto da divisão
 
-    resp1.innerText = titulo
+    resp1.innerText = titulo                // exibe as respostas
     resp2.innerText = '${horas} hora(s) e ${minutos} minuto(s)'
+
+    e.preventDefault()                      // evita envio do form                            
 })
